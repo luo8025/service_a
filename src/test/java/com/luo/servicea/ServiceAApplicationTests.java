@@ -1,4 +1,4 @@
-package com.luo.service_a;
+package com.luo.servicea;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
