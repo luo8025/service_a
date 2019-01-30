@@ -1,0 +1,27 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1125/eureka/
+server:
+  port: 8200
+spring:
+  application:
+    name: service-a
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  hystrix:
+    metrics:
+      enabled: false
+  cloud:
+    config:
+      fail-fast: true
+      discovery:
+        enabled: true
+        serviceId: config-server
+
+  profiles:
+    active: dev
+
